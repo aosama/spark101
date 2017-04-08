@@ -35,6 +35,8 @@ object SimpleScalaSpark {
     val rdd: RDD[String] =sc.textFile(FileLocations.getCountriesfileLocation)
 
     runDistinctOperation(rdd)
+
+    sc.stop()
   }
 
   //this is the method that should be called to laucnh the code on an AWS cluster using spark-submit
