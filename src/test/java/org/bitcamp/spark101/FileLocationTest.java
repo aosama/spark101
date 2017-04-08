@@ -1,6 +1,5 @@
 package org.bitcamp.spark101;
 
-import org.bitcamp.spark101.FileLocations;
 import org.junit.Test;
 
 /**
@@ -12,7 +11,7 @@ public class FileLocationTest {
     @Test
     public void testFileLocation()
     {
-        System.out.println(FileLocations.getSamplefileLocation());
+        System.out.println(FileLocations.getCountriesfileLocation());
 
     }
 

@@ -8,11 +8,24 @@ import java.net.URISyntaxException;
  */
 public class FileLocations {
 
-    public static String getSamplefileLocation()
+    public static String getCountriesfileLocation()
     {
         ClassLoader classLoader = FileLocations.class.getClassLoader();
         try {
             return classLoader.getResource("countries.txt").toURI().toString();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+
+    public static String getWordCountfileLocation()
+    {
+        ClassLoader classLoader = FileLocations.class.getClassLoader();
+        try {
+            return classLoader.getResource("wordcount.txt").toURI().toString();
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
