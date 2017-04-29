@@ -10,6 +10,7 @@ public class TestingScalaSpark {
     @Test
     public void testScalaSpark()
     {
+
         SimpleScalaSpark.launchDistinctOperationInTestMode();
     }
 }
